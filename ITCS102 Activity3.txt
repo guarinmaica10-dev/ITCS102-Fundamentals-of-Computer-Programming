@@ -1,0 +1,20 @@
+#using variables
+
+#int
+age=17
+shoe_size=39
+
+#float 
+temp=34.5
+speed=30.4
+
+#string
+username="guarinmaica10"
+password= 'mai@1008'
+last_attended_school='Dalubhasaan ng Lungsod ng Lucena'
+
+#boolean 
+isRich=FALSE
+
+print("My age",age)
+
