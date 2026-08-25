@@ -1,0 +1,12 @@
+#escape sequence 
+#\n
+#\t
+#\r
+#\b
+#\\
+#\"
+
+
+phrase 1="\"You can fall in\r\" love in an instant,\n\t\t\t its \\letting go that takes time,,Quick Brown\b\b\b\b\b Fox jumps over the lazy Dog"
+
+print(phrase1)
