@@ -1,7 +1,0 @@
-#the best course ever"
-
-#ignored message 
-
-
-
-print("Hello World")
