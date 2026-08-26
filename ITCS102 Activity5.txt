@@ -1,0 +1,20 @@
+#operators activity
+
+a=7
+b=8
+
+sum=a+b
+diff=a-b
+multiply=a*b
+division=a/b
+modulus=a%b
+exponent=a**b
+floor_div=a//b
+
+print("The sum of",a,"and ",b,"is",sum)
+print("The difference of",a,"-",b,"is",diff)
+print("The product of",a,"*",b,"is",a*b)
+print("The qoutient of",a,"/ ",b,"is",a/b)
+print("The % of",a,"%",b,"is",a%b)
+print("The ** of",a,"** ",b,"is",a**b)
+print("The floor_divof",a,"// ",b,"is",a//b)
