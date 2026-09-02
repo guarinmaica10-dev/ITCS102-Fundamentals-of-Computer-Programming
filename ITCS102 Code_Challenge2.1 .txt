@@ -1,0 +1,43 @@
+money = int(input("Enter money to DEPOSIT---->>>"))
+print(type(money))
+print("--------------------------------PH BANK DENOMINATION--------------------------------")
+print("MONEY TO DEPOSIT---->>>", money, "php")
+
+
+thousand = money // 1000
+thousand_change = money % 1000
+
+five_hundred = thousand_change // 500
+five_change = thousand_change % 500
+
+two_hundred = five_change // 200
+two_change = five_change % 200
+
+one_hundred = two_change // 100
+one_change = two_change % 100
+
+fifty = one_change // 50
+fifty_change = one_change % 50
+
+twenty = fifty_change // 20
+twenty_change = fifty_change % 20
+
+ten = twenty_change // 10
+ten_change = twenty_change % 10
+
+five = ten_change // 5
+five_change = ten_change % 5
+
+one = five_change // 1
+
+
+print()
+print("\n\t1000 =", thousand)
+print("\n\t500 =", five_hundred)
+print("\n\t200 =", two_hundred)
+print("\n\t100 =", one_hundred)
+print("\n\t50 =", fifty)
+print("\n\t20 =", twenty)
+print("\n\t10 =", ten)
+print("\n\t5 =", five)
+print("\n\t1 =", one)
