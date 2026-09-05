@@ -1,0 +1,9 @@
+hobbies ="" #empty string
+
+h = input("What are your hobbies -->")
+hobbies += h + ","
+
+h = input("What are your hobbies -->")
+hobbies += h + ","
+
+print("My hobbies are ",hobbies)
