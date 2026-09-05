@@ -1,0 +1,34 @@
+total=10
+
+m=eval(input("enter any number --->"))
+total= total+m
+
+a=eval(input("enter any number --->"))
+total -=m
+
+i=eval(input("enter any number --->"))
+total *=a
+
+c=eval(input("enter any number --->"))
+total /=i
+
+a=eval(input("enter any number --->"))
+total +=c
+
+n=eval(input("enter any number --->"))
+total -=a
+
+e=eval(input("enter any number --->"))
+total *=n
+
+q=eval(input("enter any number --->"))
+total /=e
+
+u=eval(input("enter any number --->"))
+total +=q
+
+e=eval(input("enter any number --->"))
+total  -=u
+
+
+print("Current Total is-->",total)
