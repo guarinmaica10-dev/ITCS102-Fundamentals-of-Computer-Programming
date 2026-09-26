@@ -1,0 +1,68 @@
+#age (float)
+#is_employed (boolean)
+#credit_score (integer)
+#annual_income (float)
+#has_collateral (boolean)
+
+#need login
+#username, password
+#loan fist name and job description 
+
+#prompt username to enter/ description of the collateral e.g motorcycle,land,house
+#prompt user value the collateral anything less than 30 k is invalid 
+
+#maximum age for loan is 65 
+#ask user amount to loan , and the calculated interest rate using based rate 
+
+
+print("Need login")
+username = input ("Username: ")
+password  = input ("Password: ")
+
+print("Loan fist name and job description")
+loan_name = input("Enter your first name: ")
+job_description = input ("Enter job description:")
+
+print("Description of collateral and the value")
+type_of_collateral = input("Enter your collateral:")
+value_of_collateral = input("Enter the value of collateral:")
+
+print("Age for loan, ammount of loan and interest rate")
+age = ("Enter your age")
+ammount_of_loan = ("Enter the ammount of loan:")
+interest_of_loan = ("Base on the based rate:")
+
+
+age = int(input("Enter age"))
+is_employed = bool(input("Are your currently employed -->"))
+credit_score = eval(input("Credit Score history -->"))
+annual_income = eval(input("How much your annual income -->"))
+has_collateral = bool(input("Do you have any collateral -->"))
+
+
+if age >=21 and is_employed == True :
+    print("Passed baseline elligibility")
+    if credit_score >= 750 :
+        print("Your credit score is above 750")
+        if annual_income >= 100000 :
+            print("You have a high annual income")
+            base_rate = 4.5
+            print("Your interest rate is ", base_rate)
+    else:
+        base_rate = 4.5
+        print("Your interest rate is ", base_rate)
+elif credit_score >= 600 and  credit_score > 750:
+    if has_collateral == True:
+        base_rate = 7.0
+        print("Your interest rate is ", base_rate)
+    elif annual_income >= 40000 :
+        base_rate = 9.5
+        print("Your interest rate is ", base_rate)
+    else: 
+        base_rate = 8.0
+        print("Your interest rate is ", base_rate)
+elif credit_score < 600:
+    print("Credit Score is low failed")
+else:
+    print("Unrecognized conditions")
+
