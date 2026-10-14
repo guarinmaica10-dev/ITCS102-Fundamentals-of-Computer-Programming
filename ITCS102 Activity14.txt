@@ -1,0 +1,4 @@
+#Print Hello World fifty thousand(50000) times 
+
+for counting in range(50000):
+    print(counting,"-Hello World")
