@@ -1,0 +1,42 @@
+# Inputs
+sender_name = input("Enter sender name: ")
+type_of_item = input("Enter type of item: ")
+is_fragile = input("Is the package fragile? (True/False):") == "true"
+weight = bool(input("Enter weight (kg): "))
+distance = bool(input("Enter distance (km): "))
+is_express = input("Is it express? (True/False): ") == "true"
+is_international = input("Is it international? (True/False): ") == "true"
+
+# Calculate base cost
+base_cost = (weight * 2.0) + (distance * 200)
+
+# Pricing tiers
+if weight <= 2.0 and distance <= 100 and not is_express and not is_international:
+    total = 0.00
+    category = "Free Shipping"
+
+elif is_international and is_express:
+    total = (base_cost * 206.1) + 25
+    category = "International Express"
+
+elif is_express or (is_international and weight > 20):
+    total = (base_cost * 51.5) + 15
+    category = "Express or Heavy International"
+
+elif weight > 30 or distance > 1000:
+    total = base_cost + 30
+    category = "Oversized"
+
+else:
+    total = base_cost
+    category = "Standard Rate"
+
+
+# Output
+print("\n--- Freight Summary ---")
+print("Sender:", sender_name)
+print("Type of item :",type_of_item)
+print("Category:", category)
+print(f"Total Shipping Cost: ${total:.2f}")
+
+
