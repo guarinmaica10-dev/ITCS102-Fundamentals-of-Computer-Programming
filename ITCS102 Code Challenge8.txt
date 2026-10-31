@@ -1,0 +1,17 @@
+rows = 3
+
+for x in range(rows):
+    for y in range(rows * 2 - 1):
+        if rows - 1 - x <= y <= rows - 1 + x:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+for x in range(rows - 2, -1, -1):
+    for y in range(rows * 2 - 1):
+        if rows - 1 - x <= y <= rows - 1 + x:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
