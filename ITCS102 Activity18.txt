@@ -1,0 +1,10 @@
+
+tuloy = True 
+
+while tuloy == True:
+    ask = input ("Do you wish to continue this course (yes/no) -->")
+
+    if ask.lower() == "yes":
+        print("continuing")
+    else:
+        print("stopping now")
