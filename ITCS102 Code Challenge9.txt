@@ -1,0 +1,44 @@
+#Task 1
+
+Amount = float(input("Loan Amount: "))
+Year = int(input("Input year to pay ? "))
+Months = Year * 12
+Principal = Amount / Months
+Remaining_balance = Amount
+
+print("|Month\tPayment\t\t|\tInterest\t\t|\tPrincipal\t\t|\tRemaining Loan")
+
+for count in range(1, Months + 1):
+    Interest = Remaining_balance * 0.0025
+    Pay = Interest + Principal
+    Remaining_balance -= Principal
+
+    print(f"{count}\t|\t{Pay:.2f}\t\t|\t{Interest:.2f}\t\t|\t{Principal:.2f}\t\t|\t{Remaining_balance:.2f}\t\t|")
+
+
+#Task 2
+
+
+rows = 7 
+ 
+for x in range(rows): 
+    for y in range(rows * 2 - 1 ): 
+        if y == rows - 1 - x or y == rows - 1 + x or x == rows - 1: 
+            print("*", end=" ") 
+        else: 
+            print(" ", end=" ") 
+    print()
+
+
+#Task 3
+
+
+rows = 5 
+ 
+for x in range(rows): 
+    for y in range(rows): 
+        if x == 0 or x == rows - 1 or x + y == rows - 1: 
+            print("*", end=" ") 
+        else: 
+            print(" ", end=" ") 
+    print()
