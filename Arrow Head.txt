@@ -1,0 +1,9 @@
+row = 4
+
+for x in range(4 * 2 - 1):
+    for y in range(4):
+        if y >= abs(4 - 1 -x):
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
