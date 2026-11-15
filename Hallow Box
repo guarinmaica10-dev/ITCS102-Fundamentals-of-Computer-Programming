@@ -1,0 +1,8 @@
+
+for x in range(7):
+    for y in range(14):
+        if x == 0 or x == 7 - 1 or y == 0 or y == 14 - 1:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
