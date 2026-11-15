@@ -1,0 +1,18 @@
+
+from getpass import getpass
+isLogin = False
+loginAttempt = 0
+
+user_name = "guarinmaica"
+password = "Mai@81008"
+
+while isLogin == False:
+    user_name = input("Input USERNAME -->")
+    password = getpass("Input PASSWORD -->")
+
+    if user_name == user_name and password == password:
+        print("Login Successfully")
+        print("Total Login Attempts",loginAttempt)
+    else:
+        print("Incorrect Username and Password")
+        loginAttempt +=1
