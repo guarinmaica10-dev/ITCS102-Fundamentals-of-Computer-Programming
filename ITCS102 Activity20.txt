@@ -1,0 +1,17 @@
+
+anime = []
+
+isContinue = True
+
+while isContinue == True:
+    ans = input("Do you know any anime ??? (yes / no)").lower()
+
+    if ans == "yes":
+        title = input("What is the title of the anime -->")
+        anime.append(title)
+        ans = input("Do you wish to continue (yes / no)").lower()
+        if ans == "yes":
+            print("Continue")
+            continue
+    else:
+        print(anime)
