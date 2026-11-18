@@ -22,7 +22,7 @@ while True:
             name = input("Name:")
             passengers.append(name)
             total = total + FARE 
-            print(name, " took the priority seat.")
+            print(name, " boarded at the back")
 
     elif choice == "2":
             if len(passengers) == SEATS:
