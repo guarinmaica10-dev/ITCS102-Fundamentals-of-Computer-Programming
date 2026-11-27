@@ -1,0 +1,37 @@
+def my_factorial(n):
+    fact = 1
+    for i in range(n, 0, -1):
+        fact *= i
+    return fact
+
+
+def greet_me(name):
+    greet = "hi" + name
+    print(greet)
+
+
+def box(num):
+    for x in range(num+1):
+        for y in range(num+1):
+            if x == 0 or x == num or y == 0 or y == num:
+                print(y, end=" ")
+            else:
+                print(" ", end=" ")
+        print()
+
+
+print("output", my_factorial(10))
+print("output", my_factorial(0))
+print("output", my_factorial(6))
+print("output", my_factorial(4))
+print("output", my_factorial(2))
+
+greet_me("Federico")
+greet_me("Marites")
+greet_me("Aliza")
+greet_me("Cathline")
+greet_me("Lovely")
+greet_me("Prince")
+
+box(5)
+
